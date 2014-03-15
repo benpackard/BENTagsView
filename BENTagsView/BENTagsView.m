@@ -25,6 +25,7 @@
 @synthesize onColor = _onColor;
 @synthesize offColor = _offColor;
 @synthesize onIndexes = _onIndexes;
+@synthesize tagCornerRadius = _tagCornerRadius;
 
 #pragma mark - initialization
 
@@ -39,6 +40,7 @@
 	self.offColor = [UIColor colorWithRed:0.79 green:0.79 blue:0.79 alpha:1.0];
 	self.font = [UIFont systemFontOfSize:9];
 	self.textColor = [UIColor whiteColor];
+	self.tagCornerRadius = 0;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -81,6 +83,7 @@
 		tag.onColor = self.onColor;
 		tag.offColor = self.offColor;
 		tag.on = [self.onIndexes containsIndex:idx] ? YES : NO;
+		tag.layer.cornerRadius = self.tagCornerRadius;
 		[self addSubview:tag];
 		[self.tags addObject:tag];
 	}];
@@ -193,6 +196,18 @@
 {
 	if ([onIndexes isEqualToIndexSet:self.onIndexes]) return;
 	_onIndexes = onIndexes;
+	[self refresh];
+}
+
+- (NSInteger)tagCornerRadius
+{
+	return _tagCornerRadius;
+}
+
+- (void)setTagCornerRadius:(NSInteger)tagCornerRadius
+{
+	if (tagCornerRadius == self.tagCornerRadius) return;
+	_tagCornerRadius = tagCornerRadius;
 	[self refresh];
 }
 

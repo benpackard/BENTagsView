@@ -21,10 +21,7 @@
 		self.on = NO;
 		self.offColor = self.offColor = [UIColor colorWithRed:0.79 green:0.79 blue:0.79 alpha:1.0];
 		self.onColor = [UIColor blackColor];
-		
-		//rounded corners
-		self.layer.cornerRadius = 3;
-		
+				
 		//add the label
 		self.textLabel = [[UILabel alloc] init];
 		self.textLabel.translatesAutoresizingMaskIntoConstraints = NO;

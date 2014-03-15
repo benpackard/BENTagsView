@@ -75,7 +75,9 @@
 	UILabel *helpLabel4 = [[UILabel alloc] init];
 	helpLabel4.translatesAutoresizingMaskIntoConstraints = NO;
 	helpLabel4.backgroundColor = [UIColor whiteColor];
-	helpLabel4.text = @"Fonts and sizes can be customized.";
+	helpLabel4.text = @"Fonts, corners, and sizes can be customized.";
+	helpLabel4.numberOfLines = 0;
+	helpLabel4.lineBreakMode = NSLineBreakByWordWrapping;
 	[self.view addSubview:helpLabel4];
 	
 	BENTagsView *tagsView4 = [[BENTagsView alloc] init];
@@ -83,6 +85,7 @@
 	tagsView4.tagStrings = tagsView.tagStrings;
 	[tagsView4 setOnIndexes:tagsView2.onIndexes];
 	[tagsView4 setFont:[UIFont fontWithName:@"Baskerville-BoldItalic" size:16]];
+	[tagsView4 setTagCornerRadius:3];
 	[self.view addSubview:tagsView4];
 
 	//layout
@@ -91,7 +94,7 @@
 																	  options:0
 																	  metrics:nil
 																		views:views]];
-	for (UIView *view in @[helpLabel, tagsView, helpLabel2, tagsView2, helpLabel3, tagsView3, helpLabel4, tagsView4])
+	for (UIView *view in @[tagsView, tagsView2, tagsView3, tagsView4])
 	{
 		[self.view addConstraint:[NSLayoutConstraint constraintWithItem:view
 															  attribute:NSLayoutAttributeCenterX
@@ -100,6 +103,13 @@
 															  attribute:NSLayoutAttributeCenterX
 															 multiplier:1
 															   constant:0]];
+    }
+	for (UIView *view in @[helpLabel, helpLabel2, helpLabel3, helpLabel4])
+	{
+		[self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[view]-|"
+																		  options:0
+																		  metrics:nil
+																			views:NSDictionaryOfVariableBindings(view)]];
     }
 }
 

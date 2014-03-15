@@ -14,5 +14,6 @@
 @property UIFont *font;
 @property UIColor *textColor, *onColor, *offColor;
 @property NSIndexSet *onIndexes;
+@property NSInteger tagCornerRadius;
 
 @end

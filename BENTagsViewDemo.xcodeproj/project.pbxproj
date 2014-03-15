@@ -464,6 +464,7 @@
 				C5242DA118D20FBB00F6C6BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5242DA218D20FBB00F6C6BF /* Build configuration list for PBXNativeTarget "BENTagsViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +473,7 @@
 				C5242DA418D20FBB00F6C6BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
