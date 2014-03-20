@@ -31,11 +31,10 @@
 {
 	[super viewDidLoad];
 	
-	self.view.backgroundColor = [UIColor whiteColor];
+	self.view.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.9];
 	
 	UILabel *helpLabel = [[UILabel alloc] init];
 	helpLabel.translatesAutoresizingMaskIntoConstraints = NO;
-	helpLabel.backgroundColor = [UIColor whiteColor];
 	helpLabel.text = @"Here are some tags.";
 	[self.view addSubview:helpLabel];
 	
@@ -46,7 +45,6 @@
 	
 	UILabel *helpLabel2 = [[UILabel alloc] init];
 	helpLabel2.translatesAutoresizingMaskIntoConstraints = NO;
-	helpLabel2.backgroundColor = [UIColor whiteColor];
 	helpLabel2.text = @"Tags can be on or off.";
 	[self.view addSubview:helpLabel2];
 	
@@ -60,7 +58,6 @@
 	
 	UILabel *helpLabel3 = [[UILabel alloc] init];
 	helpLabel3.translatesAutoresizingMaskIntoConstraints = NO;
-	helpLabel3.backgroundColor = [UIColor whiteColor];
 	helpLabel3.text = @"On and off colors can be customized.";
 	helpLabel3.numberOfLines = 0;
 	helpLabel3.lineBreakMode = NSLineBreakByWordWrapping;
@@ -76,7 +73,6 @@
 	
 	UILabel *helpLabel4 = [[UILabel alloc] init];
 	helpLabel4.translatesAutoresizingMaskIntoConstraints = NO;
-	helpLabel4.backgroundColor = [UIColor whiteColor];
 	helpLabel4.text = @"Fonts, corners, and sizes can be customized.";
 	helpLabel4.numberOfLines = 0;
 	helpLabel4.lineBreakMode = NSLineBreakByWordWrapping;

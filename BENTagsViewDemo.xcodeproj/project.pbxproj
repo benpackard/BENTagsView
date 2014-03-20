@@ -22,7 +22,7 @@
 		C5242DA718D20FF600F6C6BF /* BENTagsDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5242DA618D20FF600F6C6BF /* BENTagsDemoController.m */; };
 		C5242DAD18D2102B00F6C6BF /* BENTag.m in Sources */ = {isa = PBXBuildFile; fileRef = C5242DAA18D2102B00F6C6BF /* BENTag.m */; };
 		C5242DAE18D2102B00F6C6BF /* BENTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5242DAC18D2102B00F6C6BF /* BENTagsView.m */; };
-		E958829718DB642D0033B561 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E958829618DB642D0033B561 /* Screenshot.png */; };
+		E958829918DB67350033B561 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = E958829818DB67350033B561 /* Screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		C5242DAA18D2102B00F6C6BF /* BENTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BENTag.m; sourceTree = "<group>"; };
 		C5242DAB18D2102B00F6C6BF /* BENTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BENTagsView.h; sourceTree = "<group>"; };
 		C5242DAC18D2102B00F6C6BF /* BENTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BENTagsView.m; sourceTree = "<group>"; };
-		E958829618DB642D0033B561 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
+		E958829818DB67350033B561 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 				C5242D7F18D20FBB00F6C6BF /* InfoPlist.strings */,
 				C5242D8218D20FBB00F6C6BF /* main.m */,
 				C5242D8418D20FBB00F6C6BF /* BENTagsViewDemo-Prefix.pch */,
-				E958829618DB642D0033B561 /* Screenshot.png */,
+				E958829818DB67350033B561 /* Screenshot.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 			files = (
 				C5242D8118D20FBB00F6C6BF /* InfoPlist.strings in Resources */,
 				C5242D8918D20FBB00F6C6BF /* Images.xcassets in Resources */,
-				E958829718DB642D0033B561 /* Screenshot.png in Resources */,
+				E958829918DB67350033B561 /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
