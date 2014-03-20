@@ -31,7 +31,7 @@
 {
 	[super viewDidLoad];
 	
-	self.view.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.9];
+	self.view.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
 	
 	UILabel *helpLabel = [[UILabel alloc] init];
 	helpLabel.translatesAutoresizingMaskIntoConstraints = NO;
