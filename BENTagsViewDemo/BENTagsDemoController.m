@@ -62,6 +62,8 @@
 	helpLabel3.translatesAutoresizingMaskIntoConstraints = NO;
 	helpLabel3.backgroundColor = [UIColor whiteColor];
 	helpLabel3.text = @"On and off colors can be customized.";
+	helpLabel3.numberOfLines = 0;
+	helpLabel3.lineBreakMode = NSLineBreakByWordWrapping;
 	[self.view addSubview:helpLabel3];
 	
 	BENTagsView *tagsView3 = [[BENTagsView alloc] init];
