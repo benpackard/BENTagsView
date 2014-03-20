@@ -4,7 +4,7 @@
 
 `BENTagsView` allows you to quickly add a series of tags to any `UIView`.
 
-<img src="https://raw.githubusercontent.com/benpackard/BENTagsView/master/BENTagsViewDemo/Screenshot2.png" width="320px"></img>
+<img src="https://raw.githubusercontent.com/benpackard/BENTagsView/master/BENTagsViewDemo/Screenshot1.png" width="640px"></img>
 
 ## Installation
 
