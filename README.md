@@ -13,7 +13,7 @@
 #### Podfile
 
 ``` ruby
-pod 'TTTAttributedLabel'
+pod 'BENTagsView'
 ```
 
 ##Usage
