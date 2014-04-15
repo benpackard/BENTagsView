@@ -97,7 +97,7 @@
 																	 options:0
 																	 metrics:nil
 																	   views:NSDictionaryOfVariableBindings(tag)]];
-
+		
 		if (!previousTag)
 		{
 			[self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[tag]"
@@ -135,8 +135,19 @@
 - (void)setTagStrings:(NSArray *)tagStrings
 {
 	if ([tagStrings isEqualToArray:self.tagStrings]) return;
+	BOOL reuseTags = tagStrings.count == self.tagStrings.count;
 	_tagStrings = tagStrings;
-	[self refresh];
+	
+	if (reuseTags)
+	{
+		[self.tags enumerateObjectsUsingBlock:^(BENTag *tag, NSUInteger idx, BOOL *stop) {
+			tag.textLabel.text = self.tagStrings[idx];
+		}];
+	}
+	else
+	{
+		[self refresh];
+	}
 }
 
 - (UIFont *)font
@@ -172,7 +183,11 @@
 {
 	if ([onColor isEqual:self.onColor]) return;
 	_onColor = onColor;
-	[self refresh];
+	
+	for (BENTag *tag in self.tags)
+	{
+		tag.onColor = onColor;
+	}
 }
 
 - (UIColor *)offColor
@@ -184,7 +199,11 @@
 {
 	if ([offColor isEqual:self.offColor]) return;
 	_offColor = offColor;
-	[self refresh];
+	
+	for (BENTag *tag in self.tags)
+	{
+		tag.offColor = offColor;
+	}
 }
 
 - (NSIndexSet *)onIndexes
@@ -196,7 +215,10 @@
 {
 	if ([onIndexes isEqualToIndexSet:self.onIndexes]) return;
 	_onIndexes = onIndexes;
-	[self refresh];
+	
+	[self.tags enumerateObjectsUsingBlock:^(BENTag *tag, NSUInteger idx, BOOL *stop) {
+		tag.on = [self.onIndexes containsIndex:idx] ? YES : NO;
+	}];
 }
 
 - (NSInteger)tagCornerRadius
