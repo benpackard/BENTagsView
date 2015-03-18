@@ -23,7 +23,7 @@ pod 'BENTagsView'
 	BENTagsView *tagsView = [[BENTagsView alloc] init];
 	
 	//set the tag strings
-	tagsView4.tagStrings = @[@"tag one", @"tag two", @"tag three""];		
+	tagsView4.tagStrings = @[@"tag one", @"tag two", @"tag three"];		
 	
 	//switch some tags on - all others will be off
 	NSMutableIndexSet *onIndexes = [NSMutableIndexSet indexSetWithIndex:0];
