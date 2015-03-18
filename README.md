@@ -55,4 +55,4 @@ Ben Packard
 
 ## License
 
-TTTAttributedLabel is available under the MIT license. See the LICENSE file for more info.
+BENTagsView is available under the MIT license. See the LICENSE file for more info.
