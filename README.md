@@ -16,7 +16,7 @@
 pod 'BENTagsView'
 ```
 
-##Usage
+## Usage
 
 ``` objective-c
 	//create the tags view
